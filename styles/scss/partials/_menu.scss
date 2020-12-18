@@ -1,0 +1,87 @@
+@import "../variables/variables", "../mixins/mixins";
+
+.filterDishes {
+	@include center-flex(row, center);
+	margin-top: 5vh;
+}
+
+.dropdown {
+	width: 30rem;
+	position: relative;
+}
+
+.close {
+	opacity: 1;
+	visibility: hidden;
+}
+
+.open {
+	opacity: 1;
+	visibility: visible;
+}
+
+.filterDiv {
+	display: none;
+}
+
+.show {
+	display: block;
+}
+
+.dropdown-select {
+	padding: 10px;
+	border-radius: 4px;
+	background-color: $red-button;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	@include font(2rem, $semi-bold);
+	cursor: pointer;
+}
+.dropdown-list {
+	@include font(1.4rem, $medium);
+	border-radius: 4px;
+	background-color: $red-button;
+	position: absolute;
+	top: 110%;
+	left: 0;
+	right: 0;
+	transition: opacity 0.2s linear, visibility 0.2s linear;
+}
+.dropdown-list__item {
+	padding: 1rem;
+	font-size: 1.4rem;
+	cursor: pointer;
+	transition: all 0.2s;
+}
+
+.dropdown-list__item:hover {
+	background-color: $footer-background;
+}
+
+.category {
+	margin-left: 8vw;
+	margin-right: 8vw;
+
+	.title-category {
+		@include font(3.2rem, $bold);
+		color: $red-secondary;
+		margin-bottom: 0;
+	}
+
+	.cagetory-item {
+		margin-bottom: 3vh;
+		.describe-item {
+			@include font(1rem, $light);
+			color: $red-text;
+			text-align: center;
+		}
+
+		.title-item {
+			@include font(2.4rem, $bold);
+			color: $red-primary;
+			text-align: center;
+		}
+	}
+}

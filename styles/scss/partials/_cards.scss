@@ -1,0 +1,70 @@
+@import "../variables/variables", "../mixins/mixins";
+
+h1 {
+	@include font(4.2rem, $extra-bold);
+	color: $footer-background;
+	margin-top: 35px;
+	margin-bottom: 35px;
+}
+
+.menu {
+	margin-right: 5vw;
+	margin-left: 5vw;
+
+	.card {
+		display: flex;
+		flex-direction: column;
+		margin-right: 100%;
+		margin-left: 100%;
+		margin-bottom: 8vh;
+
+		.card-photo {
+			width: 300px;
+			align-self: center;
+			border-radius: 10px;
+		}
+
+		.title {
+			display: flex;
+			align-items: baseline;
+		}
+
+		.bigTitle {
+			@include font(3rem, $bold);
+			color: $red-secondary;
+			margin-right: 13vw;
+		}
+
+		.unit {
+			@include font(2.6rem, $regular);
+			color: $red-secondary;
+		}
+
+		.smallText {
+			@include font(1rem, $regular);
+			color: $red-secondary;
+		}
+
+		.describe {
+			@include font(1.4rem, $light);
+			color: $red-secondary;
+		}
+	}
+}
+
+.menu-button {
+	margin-right: 5vw;
+	margin-left: 5vw;
+	@include center-flex(row, center);
+
+	button {
+		@include font(2.8rem, $bold);
+		color: $black-button;
+		background-color: $red-button;
+		border: none;
+		border-radius: 5px;
+		padding: 18px;
+		margin-top: vh;
+		width: 95%;
+	}
+}

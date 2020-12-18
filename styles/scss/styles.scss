@@ -1,0 +1,33 @@
+@import "./variables/variables", "./resets/resets", "./mixins/mixins", "./partials/header", "./partials/slides", "./partials/cards", "./partials/depositions", "./partials/about", "./partials/footer", "./partials/animations", "./partials/menu";
+
+body {
+	background-color: $black-body;
+}
+
+.menu,
+.depositions {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.main-content {
+	min-height: 100%;
+}
+
+.whatsapp-sticky {
+	position: -webkit-sticky;
+	position: sticky;
+	bottom: 15px;
+	margin-left: 80vw;
+	height: 50px;
+	animation: shake 1.2s linear 3.5s infinite;
+}
+
+#coder {
+	background-color: $black;
+	text-align: center;
+	padding-top: 3px;
+	color: $nav-link-color;
+}

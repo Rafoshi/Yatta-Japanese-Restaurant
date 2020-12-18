@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Yatta Temakaria</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles/css/styles.min.css">
+	<link rel="icon" href="./assets/icon.svg" sizes="any" type="image/svg+xml">
+</head>
+<body>
+	
+	<header id="header">
+		<div class="container">
+			<img
+			src="./assets/Yatta.svg"
+			alt="Yatta"
+			/>
+			<div class="menu-section">
+				<div class="menu-toggle">
+					<div class="one"></div>
+					<div class="two"></div>
+					<div class="three"></div>
+				</div>
+				<nav>
+					<ul>
+						<li>
+							<a class="home" href="#header">Início</a>
+						</li>
+						<li>
+							<a class="menu" href="./menu.html">Menu</a>
+						</li>
+						<li>
+							<a class="deposition" href="#depositions">Depoimentos</a>
+						</li>
+						<li>
+							<a class="about" href="#about">Sobre</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	
+	<div id="slider" class="slider">
+		<div class="wrapper">
+			<div id="slides" class="slides">
+				<span class="slide"><img src="./assets/5.jpg"></span>
+				<span class="slide"><img src="./assets/1.jpg"></span>
+				<span class="slide"><img src="./assets/2.jpg"></span>
+				<span class="slide"><img src="./assets/3.jpg"></span>
+				<span class="slide"><img src="./assets/4.jpg"></span>
+			</div>
+		</div>
+		<a id="prev" class="control prev"></a>
+		<a id="next" class="control next"></a>
+	</div>
+	
+	<section class="menu">
+		<h1>Pratos</h1>
+		
+		<article class="card">
+			<img class="card-photo" src="./assets/card1.jpg" alt="Yakisoba">
+			<div class="title">
+				<p class="bigTitle">Yakisoba</p>
+				<p class="unit">2</p>
+				<p class="smallText">Unidades</p>
+			</div>
+			<p class="describe">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus. Praesent non lobortis nibh. </p>
+		</article>
+	</section>
+	
+	<section class="menu-button">
+		<button onclick="window.location.href='./menu.html'">Menu completo</button>
+	</section>
+	
+	<main id="depositions" class="depositions">
+		<h1>Depoimentos</h1>
+		
+		<article class="deposition">
+			<img class="pfp" src="./assets/pfp.png" alt="Foto da Adriana">
+			<h3>Adriana</h3>
+			<p class="deposition-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus. Praesent non lobortis nibh. Proin iaculis ipsum nisl, vel malesuada est porta non. Proin eget nisl commodo, ultricies risus vel, finibus orci.</p>
+		</article>
+		
+	</main>
+	
+	<section id="about" class="about">
+		<h1>Sobre nós</h1>
+		<text>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur congue dignissim nisi, ac aliquet erat accumsan eget. Praesent tempus tortor quis vulputate tempus. Curabitur maximus leo ante, sed laoreet elit porttitor ac. Aenean velit turpis, molestie quis facilisis ac, pellentesque ut purus. Nam gravida maximus nunc vel porttitor. Praesent facilisis ante in arcu lacinia fermentum. Nunc fermentum efficitur enim eget volutpat. Vivamus ac tristique velit. In eu scelerisque lectus. Vestibulum nec accumsan urna, euismod rutrum felis. Proin feugiat iaculis dignissim. Nam eget luctus ligula. 
+		</text>
+	</section>
+	
+	<a href="https://api.whatsapp.com/send?phone=551137145819&text=Olá%2C%20vim%20pelo%20site%20e%20gostaria%20de%20fazer%20um%20pedido%20!%20">
+		<img class="whatsapp-sticky" src="./assets/whatsapp.svg" alt="Whatsapp">
+	</a>
+	
+	<footer>
+		<img
+		class="logo-footer"
+		src="./assets/Yatta.svg"
+		alt="Yatta"
+		/>
+
+		<div class="instagram">
+			<a href="https://www.instagram.com/yattatemakiesushi/">
+				<img src="./assets/Instagram.svg" alt="Instagram">
+				<span>@yattatemakiesushi</span>
+			</a>
+		</div>
+
+		<div class="opening-hour">
+			<span>Funcionamento</span>
+			<span>Terça à domingo das 12h às 15h 30</span>
+			<span>Quinta à sábado das 18h às 22h</span>
+		</div>
+
+		<div class="location">
+			<span>CONTINENTAL SHOPPING</span>
+			<span>Av. Leão Machado, 100</span>
+			<span>Piso Boulevard</span>
+			<span>CEP 05328-020</span>
+			<span>São Paulo - SP</span>
+		</div>
+
+		<span>Copyright  © 2020 - Todos direitos reservados</span>
+	</footer>
+
+	<div id="coder">Site desenvolvido por Rafael Ioshi - GitHub @Rafoshi</div>
+	
+	<script src="./scripts/partials/depositions.js"></script>
+	<script src="./scripts/partials/dishes.js"></script>
+	<script src="./scripts/scripts.js"></script>
+</body>
+</html>

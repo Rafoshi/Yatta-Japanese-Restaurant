@@ -1,0 +1,95 @@
+$slider-width: 100vw;
+$slider-height: 35vh;
+
+* {
+	box-sizing: border-box;
+}
+
+.wrapper {
+	overflow: hidden;
+	position: relative;
+	width: $slider-width;
+	height: $slider-height;
+	z-index: 1;
+}
+
+.slides {
+	display: flex;
+	position: relative;
+	top: 0;
+	left: -$slider-width;
+	width: 10000px;
+}
+
+.slides.shifting {
+	transition: left 0.2s ease-out;
+}
+
+.slide {
+	width: $slider-width;
+	height: $slider-height;
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	transition: all 1s;
+	position: relative;
+	background: $black;
+	border-radius: 2px;
+
+	img {
+		height: 100%;
+	}
+}
+
+.slider.loaded {
+	.slide:nth-child(2),
+	.slide:nth-child(7) {
+		background: $black;
+	}
+	.slide:nth-child(1),
+	.slide:nth-child(6) {
+		background: $black;
+	}
+	.slide:nth-child(3) {
+		background: $black;
+	}
+	.slide:nth-child(4) {
+		background: $black;
+	}
+	.slide:nth-child(5) {
+		background: $black;
+	}
+}
+
+.control {
+	position: absolute;
+	top: 50%;
+	width: 50px;
+	height: 50px;
+	background: #fff;
+	border-radius: 50px;
+	margin-top: -20px;
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+	z-index: 2;
+}
+
+.prev,
+.next {
+	display: none;
+}
+
+.prev {
+	background-image: url(https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/ChevronLeft-512.png);
+	left: -20px;
+}
+
+.next {
+	background-image: url(https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/ChevronRight-512.png);
+	right: -20px;
+}
+
+.prev:active,
+.next:active {
+	transform: scale(0.8);
+}

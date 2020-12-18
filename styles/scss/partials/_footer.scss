@@ -1,0 +1,47 @@
+@import "../variables/variables", "../mixins/mixins";
+
+footer {
+	width: 100vw;
+	height: 100%;
+	background-color: $footer-background;
+	@include center-flex(column, center);
+	text-align: center;
+	padding-top: 2vh;
+	padding-bottom: 4vh;
+
+	.logo-footer {
+		height: 22%;
+		margin-bottom: 6%;
+	}
+
+	.instagram {
+		margin-bottom: 11%;
+	}
+
+	a {
+		text-decoration: none;
+		color: $black;
+	}
+
+	span {
+		@include font(1.4rem, $regular);
+		display: block;
+	}
+
+	.opening-hour {
+		margin-bottom: 8%;
+	}
+
+	.location {
+		margin-bottom: 8%;
+	}
+}
+
+@media (min-width: 751px) {
+	footer {
+		width: auto;
+	}
+	.wrapper {
+		width: auto;
+	}
+}

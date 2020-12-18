@@ -1,0 +1,39 @@
+@import "../variables/variables", "../mixins/mixins";
+
+.depositions {
+	margin-right: 5vw;
+	margin-left: 5vw;
+
+	h1 {
+		@include font(4.2rem, $extra-bold);
+		color: $footer-background;
+		margin-top: 10vh;
+		margin-bottom: 35px;
+	}
+
+	.deposition {
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		align-items: center;
+		flex-direction: column;
+
+		.pfp {
+			border-radius: 50%;
+		}
+
+		h3 {
+			@include font(2.8rem, $bold);
+			color: $red-secondary;
+			margin-top: 1vh;
+			margin-bottom: 1vh;
+		}
+
+		.deposition-text {
+			@include font(1.4rem, $light);
+			color: $red-text;
+			text-align: center;
+			margin: 0px 2vw 4vh 2vw;
+		}
+	}
+}
