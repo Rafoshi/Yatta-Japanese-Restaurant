@@ -157,3 +157,10 @@ function slide(wrapper, items, prev, next) {
 
 slide(slider, sliderItems, prev, next);
 
+
+
+var myCarousel = document.querySelector('#myCarousel')
+var carousel = new bootstrap.Carousel(myCarousel, {
+  interval: 2000,
+  wrap: false
+})

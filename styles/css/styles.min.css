@@ -635,10 +635,10 @@ footer .location {
 }
 
 .category .title-category {
-  font-size: 3.2rem;
+  font-size: 2.8rem;
   font-weight: 700;
   color: #952424;
-  margin-bottom: 0;
+  margin-bottom: 2vh;
 }
 
 .category .cagetory-item {

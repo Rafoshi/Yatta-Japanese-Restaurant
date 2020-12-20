@@ -65,9 +65,9 @@
 	margin-right: 8vw;
 
 	.title-category {
-		@include font(3.2rem, $bold);
+		@include font(2.8rem, $bold);
 		color: $red-secondary;
-		margin-bottom: 0;
+		margin-bottom: 2vh;
 	}
 
 	.cagetory-item {
