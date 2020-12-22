@@ -26,7 +26,7 @@ $slider-height: 35vh;
 }
 
 .slide {
-	width: $slider-width;
+	width: auto;
 	height: $slider-height;
 	cursor: pointer;
 	display: flex;

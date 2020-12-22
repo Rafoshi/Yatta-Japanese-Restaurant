@@ -185,9 +185,6 @@ header nav ul li a:hover {
     padding: 0;
     margin: 0;
   }
-  #about {
-    display: contents;
-  }
 }
 
 * {
@@ -219,7 +216,7 @@ header nav ul li a:hover {
 }
 
 .slide {
-  width: 100vw;
+  width: auto;
   height: 35vh;
   cursor: pointer;
   display: -webkit-box;
@@ -467,6 +464,70 @@ h1 {
   margin: 0px 2vw 4vh 2vw;
 }
 
+@media (min-width: 1280px) {
+  .depositions {
+    margin-right: 10vw;
+    margin-left: 10vw;
+  }
+  .depositions .deposition + .deposition {
+    margin-top: 50px;
+  }
+  .depositions .deposition h3 {
+    margin-bottom: -100px;
+  }
+  .depositions .deposition-1 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "img txt1" "img txt2";
+    justify-items: center;
+  }
+  .depositions .deposition-1 .deposition-img-1 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    grid-area: img;
+    margin-top: 80px;
+  }
+  .depositions .deposition-2 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "txt1 img" "txt2 img";
+    justify-items: center;
+  }
+  .depositions .deposition-2 .deposition-img-2 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    grid-area: img;
+    margin-top: 80px;
+  }
+  .depositions .deposition-3 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "img txt1" "img txt2";
+    justify-items: center;
+  }
+  .depositions .deposition-3 .deposition-img-3 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    grid-area: img;
+    margin-top: 80px;
+  }
+}
+
 .about {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -619,7 +680,7 @@ footer .location {
     grid-area: l;
   }
   footer span {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 400;
   }
   footer #copyright {
