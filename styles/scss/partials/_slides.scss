@@ -93,3 +93,22 @@ $slider-height: 35vh;
 .next:active {
 	transform: scale(0.8);
 }
+
+.logo-desktop {
+	display: none;
+}
+
+@media (min-width: 751px) {
+	.carousel {
+		width: auto;
+		height: 55vh;
+	}
+
+	.logo-desktop {
+		display: block;
+	}
+
+	.logo-mobile {
+		display: none;
+	}
+}

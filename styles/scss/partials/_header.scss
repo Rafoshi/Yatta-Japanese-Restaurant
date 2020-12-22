@@ -41,6 +41,7 @@ header {
 		background: $hover-nav-link;
 	}
 }
+
 @media (max-width: 750px) {
 	nav {
 		display: none;
@@ -113,5 +114,53 @@ header {
 		@include font($font-menu-open, $bold);
 		line-height: 4rem;
 		display: block;
+	}
+}
+
+@media (min-width: 751px) {
+	header {
+		background-color: $header-background-desktop;
+	}
+
+	nav ul li a:hover {
+		background-color: transparent !important;
+	}
+
+	header nav {
+		width: 50vw;
+
+		ul {
+			align-items: center;
+			display: flex;
+			justify-content: space-around;
+		}
+	}
+
+	header .container {
+		width: 90%;
+		max-width: none;
+		margin-right: 10vw;
+	}
+
+	header nav ul li a {
+		padding: 0;
+		@include font(1rem, $regular);
+		color: $footer-background;
+		&hover {
+			background: transparent;
+		}
+	}
+
+	header nav ul li {
+		font-size: x-small;
+	}
+
+	#menu {
+		padding: 0;
+		margin: 0;
+	}
+
+	#about {
+		display: contents;
 	}
 }
