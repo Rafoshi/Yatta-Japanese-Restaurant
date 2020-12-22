@@ -16,6 +16,12 @@
 		<div class="container">
 			<img
 			src="./assets/Yatta.svg"
+			class="logo-mobile"
+			alt="Yatta"
+			/>
+			<img
+			src="./assets/yatta-desktop.svg"
+			class="logo-desktop"
 			alt="Yatta"
 			/>
 			<div class="menu-section">
@@ -29,14 +35,14 @@
 						<li>
 							<a class="home" href="#header">Início</a>
 						</li>
-						<li>
-							<a class="menu" href="./menu.html">Menu</a>
+						<li id="li-menu">
+							<a id="menu" class="menu" href="./menu.html">Menu</a>
 						</li>
 						<li>
 							<a class="deposition" href="#depositions">Depoimentos</a>
 						</li>
 						<li>
-							<a class="about" href="#about">Sobre</a>
+							<a id="about" class="about-nav" href="#about">Sobre</a>
 						</li>
 					</ul>
 				</nav>
@@ -91,21 +97,33 @@
 	</section>
 	
 	<main id="depositions" class="depositions">
-		<h1>Depoimentos</h1>
+		<h1 class="deposition-h1">Depoimentos</h1>
 		
-		<article class="deposition">
-			<img class="pfp" src="./assets/pfp.png" alt="Foto da Adriana">
-			<h3>Adriana</h3>
-			<p class="deposition-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus. Praesent non lobortis nibh. Proin iaculis ipsum nisl, vel malesuada est porta non. Proin eget nisl commodo, ultricies risus vel, finibus orci.</p>
+		<article class="deposition deposition-1">
+			<img class="pfp deposition-img-1" src="./assets/pfp.png" alt="Foto da Adriana">
+			<h3 class="deposition-text-1 h3-deposition">Adriana</h3>
+			<p class="deposition-text deposition-text-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus. Praesent non lobortis nibh. Proin iaculis ipsum nisl, vel malesuada est porta non. Proin eget nisl commodo, ultricies risus vel, finibus orci.</p>
 		</article>
 		
+		<article class="deposition deposition-2">
+			<img class="pfp deposition-img-2" src="./assets/pfp.png" alt="Foto da Adriana">
+			<h3 class="deposition-text-2 h3-deposition">Luiz</h3>
+			<p class="deposition-text deposition-text-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus. Praesent non lobortis nibh. Proin iaculis ipsum nisl, vel malesuada est porta non. Proin eget nisl commodo, ultricies risus vel, finibus orci.</p>
+		</article>
+
+		<article class="deposition deposition-3">
+			<img class="pfp deposition-img-3" src="./assets/pfp.png" alt="Foto da Adriana">
+			<h3 class="deposition-text-3 h3-deposition">Luna</h3>
+			<p class="deposition-text deposition-text-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus. Praesent non lobortis nibh. Proin iaculis ipsum nisl, vel malesuada est porta non. Proin eget nisl commodo, ultricies risus vel, finibus orci.</p>
+		</article>
+
 	</main>
 	
 	<section id="about" class="about">
 		<h1>Sobre nós</h1>
-		<text>
+		<p>
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur congue dignissim nisi, ac aliquet erat accumsan eget. Praesent tempus tortor quis vulputate tempus. Curabitur maximus leo ante, sed laoreet elit porttitor ac. Aenean velit turpis, molestie quis facilisis ac, pellentesque ut purus. Nam gravida maximus nunc vel porttitor. Praesent facilisis ante in arcu lacinia fermentum. Nunc fermentum efficitur enim eget volutpat. Vivamus ac tristique velit. In eu scelerisque lectus. Vestibulum nec accumsan urna, euismod rutrum felis. Proin feugiat iaculis dignissim. Nam eget luctus ligula. 
-		</text>
+		</p>
 	</section>
 	
 	<a href="https://api.whatsapp.com/send?phone=551137145819&text=Olá%2C%20vim%20pelo%20site%20e%20gostaria%20de%20fazer%20um%20pedido%20!%20">
@@ -139,12 +157,11 @@
 			<span>São Paulo - SP</span>
 		</div>
 
-		<span>Copyright  © 2020 - Todos direitos reservados</span>
+		<span id="copyright">Copyright  © 2020 - Todos direitos reservados</span>
 	</footer>
 
 	<div id="coder">Site desenvolvido por Rafael Ioshi - GitHub @Rafoshi</div>
 	
-	<script src="./scripts/partials/depositions.js"></script>
 	<script src="./scripts/partials/dishes.js"></script>
 	<script src="./scripts/scripts.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>

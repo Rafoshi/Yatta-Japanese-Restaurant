@@ -31,3 +31,10 @@ body {
 	padding-top: 3px;
 	color: $nav-link-color;
 }
+
+@media (min-width: 751px) {
+	#coder {
+		@include font(0.8rem, $light);
+		padding: 0;
+	}
+}

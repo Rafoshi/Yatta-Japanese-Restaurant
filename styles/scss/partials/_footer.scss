@@ -1,7 +1,7 @@
 @import "../variables/variables", "../mixins/mixins";
 
 footer {
-	width: 100vw;
+	width: auto;
 	height: 100%;
 	background-color: $footer-background;
 	@include center-flex(column, center);
@@ -39,7 +39,54 @@ footer {
 
 @media (min-width: 751px) {
 	footer {
+		padding-bottom: 0;
 		width: auto;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		grid-template-areas:
+			"i b"
+			"o l"
+			"c c";
+		grid-gap: 20px;
+		.logo-footer {
+			margin-bottom: 0;
+			grid-area: b;
+			place-self: center;
+			height: 50%;
+		}
+
+		.instagram {
+			margin-bottom: 0;
+			grid-area: i;
+
+			a {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				justify-content: space-evenly;
+				margin-right: 30%;
+				margin-left: 30%;
+			}
+		}
+
+		.opening-hour {
+			margin-bottom: 0;
+			grid-area: o;
+		}
+
+		.location {
+			margin-bottom: 0;
+			grid-area: l;
+		}
+
+		span {
+			@include font(1.2rem, $regular);
+		}
+
+		#copyright {
+			grid-area: c;
+		}
 	}
 	.wrapper {
 		width: auto;

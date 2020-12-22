@@ -1,18 +1,31 @@
 @import "../variables/variables", "../mixins/mixins";
 
 .about {
-    @include center-flex(column, center);
+	@include center-flex(column, center);
 
-    h1 {
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
+	h1 {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
 
-    text {
-        @include font(1.4rem, $light);
-        color: $red-text;
-        text-align: center;
-        margin-right: 11vw;
-        margin-left: 11vw;
-    }
+	p {
+		@include font(1.4rem, $light);
+		color: $red-text;
+		text-align: center;
+		margin-right: 11vw;
+		margin-left: 11vw;
+	}
+}
+
+@media (min-width: 751px) {
+	.about {
+		display: -webkit-box !important;
+		margin-right: 15vw;
+		margin-left: 15vw;
+
+		text {
+			margin: 0;
+			text-align: center;
+		}
+	}
 }
