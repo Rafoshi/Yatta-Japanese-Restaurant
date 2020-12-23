@@ -7,11 +7,11 @@ const menuToggle = menuSection.querySelector(".menu-toggle")
 const home = document.querySelector(".home")
 const menu = document.querySelector(".menu")
 const deposition = document.querySelector(".deposition")
-const about = document.querySelector(".about")
+const about = document.querySelector(".about-nav")
 
 about.addEventListener("click", () => {
 
-  document.body.style.overflow = show ? "hidden" : "initial"
+  document.body.style.overflow = "initial"
 
   menuSection.classList.toggle("on", show)
   show = !show;
@@ -19,7 +19,7 @@ about.addEventListener("click", () => {
 
 deposition.addEventListener("click", () => {
 
-  document.body.style.overflow = show ? "hidden" : "initial"
+  document.body.style.overflow = "initial"
 
   menuSection.classList.toggle("on", show)
   show = !show;
@@ -27,7 +27,7 @@ deposition.addEventListener("click", () => {
 
 home.addEventListener("click", () => {
 
-  document.body.style.overflow = show ? "hidden" : "initial"
+  document.body.style.overflow = "initial"
 
   menuSection.classList.toggle("on", show)
   show = !show;

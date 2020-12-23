@@ -17,6 +17,16 @@ body {
   overflow: visible;
 }
 
+::-moz-selection {
+  color: white;
+  background: #952424;
+}
+
+::selection {
+  color: white;
+  background: #952424;
+}
+
 @media (min-width: 751px) {
   html {
     font-size: 100%;
@@ -321,12 +331,26 @@ h1 {
   margin-bottom: 35px;
 }
 
-.menu {
+.dishes {
   margin-right: 5vw;
   margin-left: 5vw;
+  margin-top: 5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.menu .card {
+.dishes .card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -339,7 +363,7 @@ h1 {
   margin-bottom: 8vh;
 }
 
-.menu .card .card-photo {
+.dishes .card .card-photo {
   width: 300px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -347,7 +371,7 @@ h1 {
   border-radius: 10px;
 }
 
-.menu .card .title {
+.dishes .card .title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -356,26 +380,26 @@ h1 {
           align-items: baseline;
 }
 
-.menu .card .bigTitle {
+.dishes .card .bigTitle {
   font-size: 3rem;
   font-weight: 700;
   color: #952424;
   margin-right: 13vw;
 }
 
-.menu .card .unit {
+.dishes .card .unit {
   font-size: 2.6rem;
   font-weight: 400;
   color: #952424;
 }
 
-.menu .card .smallText {
+.dishes .card .smallText {
   font-size: 1rem;
   font-weight: 400;
   color: #952424;
 }
 
-.menu .card .describe {
+.dishes .card .describe {
   font-size: 1.4rem;
   font-weight: 300;
   color: #952424;
@@ -411,6 +435,29 @@ h1 {
   padding: 18px;
   margin-top: vh;
   width: 95%;
+}
+
+.menu-button button:hover {
+  cursor: pointer;
+  background-color: #a92020;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+@media (min-width: 751px) {
+  .dishes h1 {
+    margin-top: 0;
+  }
+  .dishes .card .card-photo {
+    margin-bottom: 3vh;
+  }
+  .menu-button button {
+    width: 40%;
+  }
+  button {
+    width: 40%;
+    margin-bottom: 10vh;
+  }
 }
 
 .depositions {
@@ -565,6 +612,8 @@ h1 {
     display: -webkit-box !important;
     margin-right: 15vw;
     margin-left: 15vw;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
   }
   .about text {
     margin: 0;
@@ -856,6 +905,13 @@ footer .location {
   text-align: center;
 }
 
+@media (min-width: 751px) {
+  .category {
+    margin-left: 25vw;
+    margin-right: 25vw;
+  }
+}
+
 body {
   background-color: #101010;
 }
@@ -903,6 +959,9 @@ body {
     font-size: 0.8rem;
     font-weight: 300;
     padding: 0;
+  }
+  .whatsapp-sticky {
+    margin-left: 90vw;
   }
 }
 /*# sourceMappingURL=styles.min.css.map */

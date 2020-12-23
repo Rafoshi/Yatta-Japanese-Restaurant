@@ -7,10 +7,14 @@ h1 {
 	margin-bottom: 35px;
 }
 
-.menu {
+.dishes {
 	margin-right: 5vw;
 	margin-left: 5vw;
-
+	margin-top: 5vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	.card {
 		display: flex;
 		flex-direction: column;
@@ -66,5 +70,30 @@ h1 {
 		padding: 18px;
 		margin-top: vh;
 		width: 95%;
+
+		&:hover {
+			cursor: pointer;
+			background-color: $button-hover;
+			transition: all 0.5s;
+		}
+	}
+}
+
+@media (min-width: 751px) {
+	.dishes {
+		h1 {
+			margin-top: 0;
+		}
+		.card .card-photo {
+			margin-bottom: 3vh;
+		}
+	}
+
+	.menu-button button {
+		width: 40%;
+	}
+	button {
+		width: 40%;
+		margin-bottom: 10vh;
 	}
 }
