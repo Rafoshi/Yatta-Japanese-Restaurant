@@ -7,10 +7,14 @@ h1 {
 	margin-bottom: 35px;
 }
 
-.menu {
+.dishes {
 	margin-right: 5vw;
 	margin-left: 5vw;
-
+	margin-top: 5vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	.card {
 		display: flex;
 		flex-direction: column;
@@ -66,5 +70,12 @@ h1 {
 		padding: 18px;
 		margin-top: vh;
 		width: 95%;
+	}
+}
+
+@media (min-width: 751px) {
+	button {
+		width: 40%;
+		margin-bottom: 10vh;
 	}
 }

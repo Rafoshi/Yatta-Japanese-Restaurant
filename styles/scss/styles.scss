@@ -37,4 +37,8 @@ body {
 		@include font(0.8rem, $light);
 		padding: 0;
 	}
+
+	.whatsapp-sticky {
+		margin-left: 90vw;
+	}
 }
