@@ -17,6 +17,16 @@ body {
   overflow: visible;
 }
 
+::-moz-selection {
+  color: white;
+  background: #952424;
+}
+
+::selection {
+  color: white;
+  background: #952424;
+}
+
 @media (min-width: 751px) {
   html {
     font-size: 100%;
@@ -427,7 +437,23 @@ h1 {
   width: 95%;
 }
 
+.menu-button button:hover {
+  cursor: pointer;
+  background-color: #a92020;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
 @media (min-width: 751px) {
+  .dishes h1 {
+    margin-top: 0;
+  }
+  .dishes .card .card-photo {
+    margin-bottom: 3vh;
+  }
+  .menu-button button {
+    width: 40%;
+  }
   button {
     width: 40%;
     margin-bottom: 10vh;
@@ -877,6 +903,13 @@ footer .location {
   font-weight: 700;
   color: #8e1818;
   text-align: center;
+}
+
+@media (min-width: 751px) {
+  .category {
+    margin-left: 25vw;
+    margin-right: 25vw;
+  }
 }
 
 body {
