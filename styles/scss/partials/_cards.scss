@@ -15,6 +15,9 @@ h1 {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	#dishes-title {
+		margin-top: 0;
+	}
 	.card {
 		display: flex;
 		flex-direction: column;
@@ -91,6 +94,7 @@ h1 {
 
 	.menu-button button {
 		width: 40%;
+		padding: 5px;
 	}
 	button {
 		width: 40%;

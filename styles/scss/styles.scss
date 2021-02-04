@@ -1,7 +1,36 @@
-@import "./variables/variables", "./resets/resets", "./mixins/mixins", "./partials/header", "./partials/slides", "./partials/cards", "./partials/depositions", "./partials/about", "./partials/footer", "./partials/animations", "./partials/menu";
+@import "./variables/variables", "./resets/resets", "./mixins/mixins", "./partials/header",
+	"./partials/cards", "./partials/depositions", "./partials/about", "./partials/footer",
+	"./partials/animations", "./partials/menu";
 
 body {
 	background-color: $black-body;
+}
+
+.delivery {
+	height: 35vh;
+	margin-bottom: 5vh;
+	@include center-flex(column, center);
+	h2 {
+		color: $red-button;
+		@include font(3.4rem, $bold);
+	}
+	.delivery-button {
+		@include font(2.6rem, $extra-bold);
+		color: $black-button;
+		background-color: $red-button;
+		border: none;
+		border-radius: 5px;
+		padding: 8px;
+		margin-top: vh;
+		width: 65%;
+		margin-top: 4vh;
+
+		&:hover {
+			cursor: pointer;
+			background-color: $button-hover;
+			transition: all 0.5s;
+		}
+	}
 }
 
 .menu,
@@ -40,5 +69,14 @@ body {
 
 	.whatsapp-sticky {
 		margin-left: 90vw;
+	}
+
+	.delivery {
+		height: 45vh;
+		margin-top: 10vh;
+		.delivery-button {
+			margin-top: 15vh;
+			width: 45%;
+		}
 	}
 }

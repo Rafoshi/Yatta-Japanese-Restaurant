@@ -1,228 +1,358 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yatta Temakaria - Menu</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/css/styles.min.css">
-    <link rel="icon" href="./assets/icon.svg" sizes="any" type="image/svg+xml"> 
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Yatta Temakaria - Menu</title>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="styles/css/styles.css" />
+		<link rel="icon" href="./assets/icon.svg" sizes="any" type="image/svg+xml" />
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+	</head>
+	<body>
+		<div class="filterDishes">
+			<div id="dropdown-container" class="dropdown">
+				<div class="dropdown-select">
+					<span class="select">Selecionar categoria</span>
+					<i class="fa fa-caret-down icon"></i>
+				</div>
+				<div id="dropdown" class="dropdown-list close">
+					<div class="dropdown-list__item" onclick="filterSelection('all')">Tudo</div>
+					<div class="dropdown-list__item" onclick="filterSelection('hot-dishes')">
+						Pratos Quentes
+					</div>
+					<div class="dropdown-list__item" onclick="filterSelection('temakis')">
+						Temaki
+					</div>
+					<div class="dropdown-list__item" onclick="filterSelection('combo')">Combos</div>
+					<div class="dropdown-list__item" onclick="filterSelection('sushis')">
+						Sushis
+					</div>
+					<div class="dropdown-list__item" onclick="filterSelection('boats')">Barcos</div>
+					<div class="dropdown-list__item" onclick="filterSelection('sashimis')">
+						Sashimi
+					</div>
+					<div class="dropdown-list__item" onclick="filterSelection('side-dish')">
+						Acompanhamentos
+					</div>
+					<div class="dropdown-list__item" onclick="filterSelection('desserts')">
+						Sobremesas
+					</div>
+					<div class="dropdown-list__item" onclick="filterSelection('drinks')">
+						Bebidas
+					</div>
+					<div class="dropdown-list__item" onclick="filterSelection('others')">
+						Diversos
+					</div>
+				</div>
+			</div>
+		</div>
 
-    <div class="filterDishes">
-        <div id="dropdown-container" class="dropdown">
-            <div class="dropdown-select">
-              <span class="select">Selecionar categoria</span>
-              <i class="fa fa-caret-down icon"></i>
-            </div>
-            <div id="dropdown" class="dropdown-list close">
-              <div class="dropdown-list__item" onclick="filterSelection('all')">Tudo</div>
-              <div class="dropdown-list__item" onclick="filterSelection('hot-dishes')">Pratos Quentes</div>
-              <div class="dropdown-list__item" onclick="filterSelection('temakis')">Temaki</div>
-              <div class="dropdown-list__item" onclick="filterSelection('combo')">Combos</div>
-              <div class="dropdown-list__item" onclick="filterSelection('sushis')">Sushis</div>
-              <div class="dropdown-list__item" onclick="filterSelection('boats')">Barcos</div>
-              <div class="dropdown-list__item" onclick="filterSelection('sashimis')">Sashimi</div>
-              <div class="dropdown-list__item" onclick="filterSelection('side-dish')">Acompanhamentos</div>
-              <div class="dropdown-list__item" onclick="filterSelection('desserts')">Sobremesas</div>
-              <div class="dropdown-list__item" onclick="filterSelection('drinks')">Bebidas</div>
-              <div class="dropdown-list__item" onclick="filterSelection('others')">Diversos</div>
-            </div>
-        </div>
-    </div>
+		<section class="category filterDiv hot-dishes">
+			<h1 class="title-category">Pratos Quentes</h1>
 
-    <section class="category filterDiv hot-dishes">
-        <h1 class="title-category">Pratos Quentes</h1>
+			<article class="cagetory-item">
+				<p class="title-item">Yakisoba</p>
+				<p class="describe-item">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula
+					magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus.
+					Praesent non lobortis nibh.
+				</p>
+			</article>
+		</section>
 
-        <article class="cagetory-item">
-            <p class="title-item">Yakisoba</p>
-            <p class="describe-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus. Praesent non lobortis nibh. </p>
-        </article>
+		<section class="category filterDiv temakis">
+			<h1 class="title-category">Temaki</h1>
 
-    </section>
+			<article class="cagetory-item">
+				<p class="title-item">Yakisoba</p>
+				<p class="describe-item">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula
+					magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus.
+					Praesent non lobortis nibh.
+				</p>
+			</article>
 
-    <section class="category filterDiv temakis">
-        <h1 class="title-category">Temaki</h1>
+			<article class="cagetory-item">
+				<p class="title-item">Yakisoba</p>
+				<p class="describe-item">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula
+					magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus.
+					Praesent non lobortis nibh.
+				</p>
+			</article>
 
-        <article class="cagetory-item">
-            <p class="title-item">Yakisoba</p>
-            <p class="describe-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus. Praesent non lobortis nibh. </p>
-        </article>
+			<article class="cagetory-item">
+				<p class="title-item">Yakisoba</p>
+				<p class="describe-item">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula
+					magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus.
+					Praesent non lobortis nibh.
+				</p>
+			</article>
+		</section>
 
-        <article class="cagetory-item">
-            <p class="title-item">Yakisoba</p>
-            <p class="describe-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus. Praesent non lobortis nibh. </p>
-        </article>
+		<section class="category filterDiv combo">
+			<h1 class="title-category">Combos</h1>
 
-        <article class="cagetory-item">
-            <p class="title-item">Yakisoba</p>
-            <p class="describe-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus. Praesent non lobortis nibh. </p>
-        </article>
-    </section>
+			<article class="cagetory-item">
+				<p class="title-item">Yakisoba</p>
+				<p class="describe-item">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula
+					magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus.
+					Praesent non lobortis nibh.
+				</p>
+			</article>
 
-    <section class="category filterDiv combo">
-        <h1 class="title-category">Combos</h1>
+			<article class="cagetory-item">
+				<p class="title-item">Yakisoba</p>
+				<p class="describe-item">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula
+					magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus.
+					Praesent non lobortis nibh.
+				</p>
+			</article>
 
-        <article class="cagetory-item">
-            <p class="title-item">Yakisoba</p>
-            <p class="describe-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus. Praesent non lobortis nibh. </p>
-        </article>
+			<article class="cagetory-item">
+				<p class="title-item">Yakisoba</p>
+				<p class="describe-item">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula
+					magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus.
+					Praesent non lobortis nibh.
+				</p>
+			</article>
+		</section>
 
-        <article class="cagetory-item">
-            <p class="title-item">Yakisoba</p>
-            <p class="describe-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus. Praesent non lobortis nibh. </p>
-        </article>
+		<section class="category filterDiv sushis">
+			<h1 class="title-category">Sushis</h1>
 
-        <article class="cagetory-item">
-            <p class="title-item">Yakisoba</p>
-            <p class="describe-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus. Praesent non lobortis nibh. </p>
-        </article>
-    </section>
+			<article class="cagetory-item">
+				<p class="title-item">Yakisoba</p>
+				<p class="describe-item">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula
+					magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus.
+					Praesent non lobortis nibh.
+				</p>
+			</article>
 
-    <section class="category filterDiv sushis">
-        <h1 class="title-category">Sushis</h1>
+			<article class="cagetory-item">
+				<p class="title-item">Yakisoba</p>
+				<p class="describe-item">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula
+					magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus.
+					Praesent non lobortis nibh.
+				</p>
+			</article>
 
-        <article class="cagetory-item">
-            <p class="title-item">Yakisoba</p>
-            <p class="describe-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus. Praesent non lobortis nibh. </p>
-        </article>
+			<article class="cagetory-item">
+				<p class="title-item">Yakisoba</p>
+				<p class="describe-item">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula
+					magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus.
+					Praesent non lobortis nibh.
+				</p>
+			</article>
+		</section>
 
-        <article class="cagetory-item">
-            <p class="title-item">Yakisoba</p>
-            <p class="describe-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus. Praesent non lobortis nibh. </p>
-        </article>
+		<section class="category filterDiv boats">
+			<h1 class="title-category">Barcos</h1>
 
-        <article class="cagetory-item">
-            <p class="title-item">Yakisoba</p>
-            <p class="describe-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus. Praesent non lobortis nibh. </p>
-        </article>
-    </section>
+			<article class="cagetory-item">
+				<p class="title-item">Yakisoba</p>
+				<p class="describe-item">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula
+					magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus.
+					Praesent non lobortis nibh.
+				</p>
+			</article>
 
-    <section class="category filterDiv boats">
-        <h1 class="title-category">Barcos</h1>
+			<article class="cagetory-item">
+				<p class="title-item">Yakisoba</p>
+				<p class="describe-item">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula
+					magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus.
+					Praesent non lobortis nibh.
+				</p>
+			</article>
 
-        <article class="cagetory-item">
-            <p class="title-item">Yakisoba</p>
-            <p class="describe-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus. Praesent non lobortis nibh. </p>
-        </article>
+			<article class="cagetory-item">
+				<p class="title-item">Yakisoba</p>
+				<p class="describe-item">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula
+					magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus.
+					Praesent non lobortis nibh.
+				</p>
+			</article>
+		</section>
 
-        <article class="cagetory-item">
-            <p class="title-item">Yakisoba</p>
-            <p class="describe-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus. Praesent non lobortis nibh. </p>
-        </article>
+		<section class="category filterDiv sashimis">
+			<h1 class="title-category">Sashimi</h1>
 
-        <article class="cagetory-item">
-            <p class="title-item">Yakisoba</p>
-            <p class="describe-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus. Praesent non lobortis nibh. </p>
-        </article>
-    </section>
+			<article class="cagetory-item">
+				<p class="title-item">Yakisoba</p>
+				<p class="describe-item">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula
+					magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus.
+					Praesent non lobortis nibh.
+				</p>
+			</article>
 
-    <section class="category filterDiv sashimis">
-        <h1 class="title-category">Sashimi</h1>
+			<article class="cagetory-item">
+				<p class="title-item">Yakisoba</p>
+				<p class="describe-item">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula
+					magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus.
+					Praesent non lobortis nibh.
+				</p>
+			</article>
 
-        <article class="cagetory-item">
-            <p class="title-item">Yakisoba</p>
-            <p class="describe-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus. Praesent non lobortis nibh. </p>
-        </article>
+			<article class="cagetory-item">
+				<p class="title-item">Yakisoba</p>
+				<p class="describe-item">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula
+					magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus.
+					Praesent non lobortis nibh.
+				</p>
+			</article>
+		</section>
 
-        <article class="cagetory-item">
-            <p class="title-item">Yakisoba</p>
-            <p class="describe-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus. Praesent non lobortis nibh. </p>
-        </article>
+		<section class="category filterDiv side-dish">
+			<h1 class="title-category">Acompanhamentos</h1>
 
-        <article class="cagetory-item">
-            <p class="title-item">Yakisoba</p>
-            <p class="describe-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus. Praesent non lobortis nibh. </p>
-        </article>
-    </section>
+			<article class="cagetory-item">
+				<p class="title-item">Yakisoba</p>
+				<p class="describe-item">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula
+					magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus.
+					Praesent non lobortis nibh.
+				</p>
+			</article>
 
-    <section class="category filterDiv side-dish">
-        <h1 class="title-category">Acompanhamentos</h1>
+			<article class="cagetory-item">
+				<p class="title-item">Yakisoba</p>
+				<p class="describe-item">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula
+					magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus.
+					Praesent non lobortis nibh.
+				</p>
+			</article>
 
-        <article class="cagetory-item">
-            <p class="title-item">Yakisoba</p>
-            <p class="describe-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus. Praesent non lobortis nibh. </p>
-        </article>
+			<article class="cagetory-item">
+				<p class="title-item">Yakisoba</p>
+				<p class="describe-item">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula
+					magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus.
+					Praesent non lobortis nibh.
+				</p>
+			</article>
+		</section>
 
-        <article class="cagetory-item">
-            <p class="title-item">Yakisoba</p>
-            <p class="describe-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus. Praesent non lobortis nibh. </p>
-        </article>
+		<section class="category filterDiv desserts">
+			<h1 class="title-category">Sobremesas</h1>
 
-        <article class="cagetory-item">
-            <p class="title-item">Yakisoba</p>
-            <p class="describe-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus. Praesent non lobortis nibh. </p>
-        </article>
-    </section>
+			<article class="cagetory-item">
+				<p class="title-item">Yakisoba</p>
+				<p class="describe-item">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula
+					magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus.
+					Praesent non lobortis nibh.
+				</p>
+			</article>
 
-    <section class="category filterDiv desserts">
-        <h1 class="title-category">Sobremesas</h1>
+			<article class="cagetory-item">
+				<p class="title-item">Yakisoba</p>
+				<p class="describe-item">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula
+					magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus.
+					Praesent non lobortis nibh.
+				</p>
+			</article>
 
-        <article class="cagetory-item">
-            <p class="title-item">Yakisoba</p>
-            <p class="describe-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus. Praesent non lobortis nibh. </p>
-        </article>
+			<article class="cagetory-item">
+				<p class="title-item">Yakisoba</p>
+				<p class="describe-item">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula
+					magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus.
+					Praesent non lobortis nibh.
+				</p>
+			</article>
+		</section>
 
-        <article class="cagetory-item">
-            <p class="title-item">Yakisoba</p>
-            <p class="describe-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus. Praesent non lobortis nibh. </p>
-        </article>
+		<section class="category filterDiv drinks">
+			<h1 class="title-category">Bebidas</h1>
 
-        <article class="cagetory-item">
-            <p class="title-item">Yakisoba</p>
-            <p class="describe-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus. Praesent non lobortis nibh. </p>
-        </article>
-    </section>
+			<article class="cagetory-item">
+				<p class="title-item">Yakisoba</p>
+				<p class="describe-item">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula
+					magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus.
+					Praesent non lobortis nibh.
+				</p>
+			</article>
 
-    <section class="category filterDiv drinks">
-        <h1 class="title-category">Bebidas</h1>
+			<article class="cagetory-item">
+				<p class="title-item">Yakisoba</p>
+				<p class="describe-item">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula
+					magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus.
+					Praesent non lobortis nibh.
+				</p>
+			</article>
 
-        <article class="cagetory-item">
-            <p class="title-item">Yakisoba</p>
-            <p class="describe-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus. Praesent non lobortis nibh. </p>
-        </article>
+			<article class="cagetory-item">
+				<p class="title-item">Yakisoba</p>
+				<p class="describe-item">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula
+					magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus.
+					Praesent non lobortis nibh.
+				</p>
+			</article>
+		</section>
 
-        <article class="cagetory-item">
-            <p class="title-item">Yakisoba</p>
-            <p class="describe-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus. Praesent non lobortis nibh. </p>
-        </article>
+		<section class="category filterDiv others">
+			<h1 class="title-category">Diversos</h1>
 
-        <article class="cagetory-item">
-            <p class="title-item">Yakisoba</p>
-            <p class="describe-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus. Praesent non lobortis nibh. </p>
-        </article>
-    </section>
+			<article class="cagetory-item">
+				<p class="title-item">Yakisoba</p>
+				<p class="describe-item">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula
+					magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus.
+					Praesent non lobortis nibh.
+				</p>
+			</article>
 
-    <section class="category filterDiv others">
-        <h1 class="title-category">Diversos</h1>
+			<article class="cagetory-item">
+				<p class="title-item">Yakisoba</p>
+				<p class="describe-item">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula
+					magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus.
+					Praesent non lobortis nibh.
+				</p>
+			</article>
 
-        <article class="cagetory-item">
-            <p class="title-item">Yakisoba</p>
-            <p class="describe-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus. Praesent non lobortis nibh. </p>
-        </article>
+			<article class="cagetory-item">
+				<p class="title-item">Yakisoba</p>
+				<p class="describe-item">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula
+					magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus.
+					Praesent non lobortis nibh.
+				</p>
+			</article>
+		</section>
 
-        <article class="cagetory-item">
-            <p class="title-item">Yakisoba</p>
-            <p class="describe-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus. Praesent non lobortis nibh. </p>
-        </article>
+		<a
+			href="https://api.whatsapp.com/send?phone=551137145819&text=Olá%2C%20vim%20pelo%20site%20e%20gostaria%20de%20fazer%20um%20pedido%20!%20"
+		>
+			<img class="whatsapp-sticky" src="./assets/whatsapp.svg" alt="Whatsapp" />
+		</a>
 
-        <article class="cagetory-item">
-            <p class="title-item">Yakisoba</p>
-            <p class="describe-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus. Praesent non lobortis nibh. </p>
-        </article>
-    </section>
-
-    <a href="https://api.whatsapp.com/send?phone=551137145819&text=Olá%2C%20vim%20pelo%20site%20e%20gostaria%20de%20fazer%20um%20pedido%20!%20">
-		<img class="whatsapp-sticky" src="./assets/whatsapp.svg" alt="Whatsapp">
-	</a>
-
-    <script src="./scripts/partials/menu.js"></script>
-
-</body>
+		<script src="./scripts/partials/menu.js"></script>
+	</body>
 </html>

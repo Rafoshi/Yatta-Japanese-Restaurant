@@ -191,135 +191,15 @@ header nav ul li a:hover {
   header nav ul li {
     font-size: x-small;
   }
-  #menu {
-    padding: 0;
-    margin: 0;
-  }
-}
-
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.wrapper {
-  overflow: hidden;
-  position: relative;
-  width: 100vw;
-  height: 35vh;
-  z-index: 1;
-}
-
-.slides {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  top: 0;
-  left: -100vw;
-  width: 10000px;
-}
-
-.slides.shifting {
-  -webkit-transition: left 0.2s ease-out;
-  transition: left 0.2s ease-out;
-}
-
-.slide {
-  width: auto;
-  height: 35vh;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-transition: all 1s;
-  transition: all 1s;
-  position: relative;
-  background: #000000;
-  border-radius: 2px;
-}
-
-.slide img {
-  height: 100%;
-}
-
-.slider.loaded .slide:nth-child(2),
-.slider.loaded .slide:nth-child(7) {
-  background: #000000;
-}
-
-.slider.loaded .slide:nth-child(1),
-.slider.loaded .slide:nth-child(6) {
-  background: #000000;
-}
-
-.slider.loaded .slide:nth-child(3) {
-  background: #000000;
-}
-
-.slider.loaded .slide:nth-child(4) {
-  background: #000000;
-}
-
-.slider.loaded .slide:nth-child(5) {
-  background: #000000;
-}
-
-.control {
-  position: absolute;
-  top: 50%;
-  width: 50px;
-  height: 50px;
-  background: #fff;
-  border-radius: 50px;
-  margin-top: -20px;
-  -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
-          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
-  z-index: 2;
-}
-
-.prev,
-.next {
-  display: none;
-}
-
-.prev {
-  background-image: url(https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/ChevronLeft-512.png);
-  left: -20px;
-}
-
-.next {
-  background-image: url(https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/ChevronRight-512.png);
-  right: -20px;
-}
-
-.prev:active,
-.next:active {
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
-}
-
-.logo-desktop {
-  display: none;
-}
-
-@media (min-width: 751px) {
-  .carousel {
-    width: auto;
-    height: 55vh;
-  }
   .logo-desktop {
     display: block;
   }
   .logo-mobile {
     display: none;
+  }
+  #menu {
+    padding: 0;
+    margin: 0;
   }
 }
 
@@ -348,6 +228,10 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.dishes #dishes-title {
+  margin-top: 0;
 }
 
 .dishes .card {
@@ -453,6 +337,7 @@ h1 {
   }
   .menu-button button {
     width: 40%;
+    padding: 5px;
   }
   button {
     width: 40%;
@@ -916,6 +801,52 @@ body {
   background-color: #101010;
 }
 
+.delivery {
+  height: 35vh;
+  margin-bottom: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.delivery h2 {
+  color: #d22b2b;
+  font-size: 3.4rem;
+  font-weight: 700;
+}
+
+.delivery .delivery-button {
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: #000000;
+  background-color: #d22b2b;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  margin-top: vh;
+  width: 65%;
+  margin-top: 4vh;
+}
+
+.delivery .delivery-button:hover {
+  cursor: pointer;
+  background-color: #a92020;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
 .menu,
 .depositions {
   display: -webkit-box;
@@ -963,5 +894,13 @@ body {
   .whatsapp-sticky {
     margin-left: 90vw;
   }
+  .delivery {
+    height: 45vh;
+    margin-top: 10vh;
+  }
+  .delivery .delivery-button {
+    margin-top: 15vh;
+    width: 45%;
+  }
 }
-/*# sourceMappingURL=styles.min.css.map */
+/*# sourceMappingURL=styles.css.map */

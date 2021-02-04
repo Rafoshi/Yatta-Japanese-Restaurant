@@ -1,200 +1,209 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Yatta Temakaria</title>
-	<link rel="stylesheet" href="./styles/css/vendors/bootstrap.css">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="styles/css/styles.min.css">
-	<link rel="icon" href="./assets/icon.svg" sizes="any" type="image/svg+xml">
-</head>
-<body>
-	
-	<header id="header">
-		<div class="container">
-			<img
-			src="./assets/Yatta.svg"
-			class="logo-mobile"
-			alt="Yatta"
-			/>
-			<img
-			src="./assets/yatta-desktop.svg"
-			class="logo-desktop"
-			alt="Yatta"
-			/>
-			<div class="menu-section">
-				<div class="menu-toggle">
-					<div class="one"></div>
-					<div class="two"></div>
-					<div class="three"></div>
-				</div>
-				<nav>
-					<ul>
-						<li>
-							<a class="home" href="#header">Início</a>
-						</li>
-						<li id="li-menu">
-							<a id="menu" class="menu" href="./menu.html">Menu</a>
-						</li>
-						<li>
-							<a class="deposition" href="#depositions">Depoimentos</a>
-						</li>
-						<li>
-							<a class="about-nav" href="#about">Sobre</a>
-						</li>
-					</ul>
-				</nav>
-			</div>
-		</div>
-	</header>
-
-	<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-		<div class="carousel-inner">
-		  <div class="carousel-item active">
-			<img src="./assets/5.jpg" class="d-block w-100" alt="...">
-		  </div>
-		  <div class="carousel-item">
-			<img src="./assets/1.jpg" class="d-block w-100" alt="...">
-		  </div>
-		  <div class="carousel-item">
-			<img src="./assets/2.jpg" class="d-block w-100" alt="...">
-		  </div>
-		  <div class="carousel-item">
-			<img src="./assets/3.jpg" class="d-block w-100" alt="...">
-		  </div>
-		  <div class="carousel-item">
-			<img src="./assets/4.jpg" class="d-block w-100" alt="...">
-		  </div>
-		</div>
-		<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
-		  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-		  <span class="visually-hidden">Previous</span>
-		</a>
-		<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
-		  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-		  <span class="visually-hidden">Next</span>
-		</a>
-	</div>
-	
-	<section class="dishes">
-		<h1>Pratos</h1>
-		
-		<article class="card card-1">
-			<img class="card-photo" src="./assets/card1.jpg" alt="Yakisoba">
-			<div class="title">
-				<p class="bigTitle">Yakisoba</p>
-				<p class="unit">2</p>
-				<p class="smallText">Unidades</p>
-			</div>
-			<p class="describe">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus. Praesent non lobortis nibh. </p>
-		</article>
-
-		<article class="card card-2">
-			<img class="card-photo" src="./assets/card1.jpg" alt="Yakisoba">
-			<div class="title">
-				<p class="bigTitle">Yakisoba</p>
-				<p class="unit">2</p>
-				<p class="smallText">Unidades</p>
-			</div>
-			<p class="describe">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus. Praesent non lobortis nibh. </p>
-		</article>
-
-		<article class="card card-3">
-			<img class="card-photo" src="./assets/card1.jpg" alt="Yakisoba">
-			<div class="title">
-				<p class="bigTitle">Yakisoba</p>
-				<p class="unit">2</p>
-				<p class="smallText">Unidades</p>
-			</div>
-			<p class="describe">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus. Praesent non lobortis nibh. </p>
-		</article>
-
-		<article class="card card-4">
-			<img class="card-photo" src="./assets/card1.jpg" alt="Yakisoba">
-			<div class="title">
-				<p class="bigTitle">Yakisoba</p>
-				<p class="unit">2</p>
-				<p class="smallText">Unidades</p>
-			</div>
-			<p class="describe">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus. Praesent non lobortis nibh. </p>
-		</article>
-
-	</section>
-	
-	<section class="menu-button">
-		<button onclick="window.location.href='./menu.html'">Menu completo</button>
-	</section>
-	
-	<main id="depositions" class="depositions">
-		<h1 class="deposition-h1">Depoimentos</h1>
-		
-		<article class="deposition deposition-1">
-			<img class="pfp deposition-img-1" src="./assets/pfp.png" alt="Foto da Adriana">
-			<h3 class="deposition-text-1 h3-deposition">Adriana</h3>
-			<p class="deposition-text deposition-text-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus. Praesent non lobortis nibh. Proin iaculis ipsum nisl, vel malesuada est porta non. Proin eget nisl commodo, ultricies risus vel, finibus orci.</p>
-		</article>
-		
-		<article class="deposition deposition-2">
-			<img class="pfp deposition-img-2" src="./assets/pfp.png" alt="Foto da Adriana">
-			<h3 class="deposition-text-2 h3-deposition">Luiz</h3>
-			<p class="deposition-text deposition-text-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus. Praesent non lobortis nibh. Proin iaculis ipsum nisl, vel malesuada est porta non. Proin eget nisl commodo, ultricies risus vel, finibus orci.</p>
-		</article>
-
-		<article class="deposition deposition-3">
-			<img class="pfp deposition-img-3" src="./assets/pfp.png" alt="Foto da Adriana">
-			<h3 class="deposition-text-3 h3-deposition">Luna</h3>
-			<p class="deposition-text deposition-text-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus. Praesent non lobortis nibh. Proin iaculis ipsum nisl, vel malesuada est porta non. Proin eget nisl commodo, ultricies risus vel, finibus orci.</p>
-		</article>
-
-	</main>
-	
-	<section id="about" class="about">
-		<h1>Sobre nós</h1>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur congue dignissim nisi, ac aliquet erat accumsan eget. Praesent tempus tortor quis vulputate tempus. Curabitur maximus leo ante, sed laoreet elit porttitor ac. Aenean velit turpis, molestie quis facilisis ac, pellentesque ut purus. Nam gravida maximus nunc vel porttitor. Praesent facilisis ante in arcu lacinia fermentum. Nunc fermentum efficitur enim eget volutpat. Vivamus ac tristique velit. In eu scelerisque lectus. Vestibulum nec accumsan urna, euismod rutrum felis. Proin feugiat iaculis dignissim. Nam eget luctus ligula. 
-		</p>
-	</section>
-	
-	<a href="https://api.whatsapp.com/send?phone=551137145819&text=Olá%2C%20vim%20pelo%20site%20e%20gostaria%20de%20fazer%20um%20pedido%20!%20">
-		<img class="whatsapp-sticky" src="./assets/whatsapp.svg" alt="Whatsapp">
-	</a>
-	
-	<footer>
-		<img
-		class="logo-footer"
-		src="./assets/Yatta.svg"
-		alt="Yatta"
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Yatta Temakaria</title>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+			rel="stylesheet"
 		/>
+		<link rel="stylesheet" href="styles/css/styles.css" />
+		<link rel="icon" href="./assets/icon.svg" sizes="any" type="image/svg+xml" />
+	</head>
+	<body>
+		<header id="header">
+			<div class="container">
+				<img src="./assets/Yatta.svg" class="logo-mobile" alt="Yatta" />
+				<img src="./assets/yatta-desktop.svg" class="logo-desktop" alt="Yatta" />
+				<div class="menu-section">
+					<div class="menu-toggle">
+						<div class="one"></div>
+						<div class="two"></div>
+						<div class="three"></div>
+					</div>
+					<nav>
+						<ul>
+							<li>
+								<a class="home" href="#header">Início</a>
+							</li>
+							<li id="li-menu">
+								<a id="menu" class="menu" href="./menu.html">Menu</a>
+							</li>
+							<li>
+								<a class="deposition" href="#depositions">Depoimentos</a>
+							</li>
+							<li>
+								<a class="about-nav" href="#about">Sobre</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
 
-		<div class="instagram">
-			<a href="https://www.instagram.com/yattatemakiesushi/">
-				<img src="./assets/Instagram.svg" alt="Instagram">
-				<span>@yattatemakiesushi</span>
-			</a>
-		</div>
+		<main class="delivery">
+			<h2>Faça seu pedido</h2>
+			<button
+				class="delivery-button"
+				onclick="window.location.href='https://api.whatsapp.com/send?phone=551137145819&text=Olá%2C%20vim%20pelo%20site%20e%20gostaria%20de%20fazer%20um%20pedido%20!%20'"
+			>
+				Pedir Delivery
+			</button>
+		</main>
 
-		<div class="opening-hour">
-			<span>Funcionamento</span>
-			<span>Segunda a segunda das 10h às 22h</span>
-		</div>
+		<section class="dishes">
+			<h1 id="dishes-title">Pratos</h1>
 
-		<div class="location">
-			<span>CONTINENTAL SHOPPING</span>
-			<span>Av. Leão Machado, 100</span>
-			<span>Piso Boulevard</span>
-			<span>CEP 05328-020</span>
-			<span>São Paulo - SP</span>
-		</div>
+			<article class="card card-1">
+				<img class="card-photo" src="./assets/card1.jpg" alt="Yakisoba" />
+				<div class="title">
+					<p class="bigTitle">Yakisoba</p>
+					<p class="unit">2</p>
+					<p class="smallText">Unidades</p>
+				</div>
+				<p class="describe">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula
+					magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus.
+					Praesent non lobortis nibh.
+				</p>
+			</article>
 
-		<span id="copyright">Copyright  © 2020 - Todos direitos reservados</span>
-	</footer>
-	
-	<div id="coder">Site desenvolvido por Rafael Ioshi - GitHub @Rafoshi</div>
-	
-	<script src="./scripts/partials/dishes.js"></script>
-	<script src="./scripts/scripts.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-</body>
+			<article class="card card-2">
+				<img class="card-photo" src="./assets/card1.jpg" alt="Yakisoba" />
+				<div class="title">
+					<p class="bigTitle">Yakisoba</p>
+					<p class="unit">2</p>
+					<p class="smallText">Unidades</p>
+				</div>
+				<p class="describe">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula
+					magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus.
+					Praesent non lobortis nibh.
+				</p>
+			</article>
+
+			<article class="card card-3">
+				<img class="card-photo" src="./assets/card1.jpg" alt="Yakisoba" />
+				<div class="title">
+					<p class="bigTitle">Yakisoba</p>
+					<p class="unit">2</p>
+					<p class="smallText">Unidades</p>
+				</div>
+				<p class="describe">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula
+					magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus.
+					Praesent non lobortis nibh.
+				</p>
+			</article>
+
+			<article class="card card-4">
+				<img class="card-photo" src="./assets/card1.jpg" alt="Yakisoba" />
+				<div class="title">
+					<p class="bigTitle">Yakisoba</p>
+					<p class="unit">2</p>
+					<p class="smallText">Unidades</p>
+				</div>
+				<p class="describe">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula
+					magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus.
+					Praesent non lobortis nibh.
+				</p>
+			</article>
+		</section>
+
+		<section class="menu-button">
+			<button onclick="window.location.href='./menu.html'">Menu completo</button>
+		</section>
+
+		<main id="depositions" class="depositions">
+			<h1 class="deposition-h1">Depoimentos</h1>
+
+			<article class="deposition deposition-1">
+				<img
+					class="pfp deposition-img-1"
+					src="./assets/tatiane.jpg"
+					alt="Foto da Tatiane"
+				/>
+				<h3 class="deposition-text-1 h3-deposition">Tatiane</h3>
+				<p class="deposition-text deposition-text-1">
+					Comida de excelente qualidade, paladar inigualável, cardápio com diversos pratos
+					e combos maravilhosos, salmão super fresco! Todos os pratos são maravilhosos,
+					meu preferido que amo é Jyo de Salmão com abacaxi super indico! Atendimento
+					excelente estão de parabéns equipe Yatta!!
+				</p>
+			</article>
+
+			<article class="deposition deposition-2">
+				<img class="pfp deposition-img-2" src="./assets/thieme.jpg" alt="Foto da Thieme" />
+				<h3 class="deposition-text-2 h3-deposition">Thieme</h3>
+				<p class="deposition-text deposition-text-2">
+					Cardápio extraordinário, super bem elaborado e ingredientes frescos que
+					surpreendem pela explosão de sabores. Os acompanhamentos dão um show à parte o
+					que torna as refeições ainda mais deliciosas. Atendimento de excelência, equipe
+					top, o melhor!
+				</p>
+			</article>
+
+			<article class="deposition deposition-3">
+				<img class="pfp deposition-img-3" src="./assets/pfp.png" alt="Foto da Adriana" />
+				<h3 class="deposition-text-3 h3-deposition">Luna</h3>
+				<p class="deposition-text deposition-text-3">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula
+					magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus.
+					Praesent non lobortis nibh. Proin iaculis ipsum nisl, vel malesuada est porta
+					non. Proin eget nisl commodo, ultricies risus vel, finibus orci.
+				</p>
+			</article>
+		</main>
+
+		<section id="about" class="about">
+			<h1>Sobre nós</h1>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur congue dignissim
+				nisi, ac aliquet erat accumsan eget. Praesent tempus tortor quis vulputate tempus.
+				Curabitur maximus leo ante, sed laoreet elit porttitor ac. Aenean velit turpis,
+				molestie quis facilisis ac, pellentesque ut purus. Nam gravida maximus nunc vel
+				porttitor. Praesent facilisis ante in arcu lacinia fermentum. Nunc fermentum
+				efficitur enim eget volutpat. Vivamus ac tristique velit. In eu scelerisque lectus.
+				Vestibulum nec accumsan urna, euismod rutrum felis. Proin feugiat iaculis dignissim.
+				Nam eget luctus ligula.
+			</p>
+		</section>
+
+		<a
+			href="https://api.whatsapp.com/send?phone=551137145819&text=Olá%2C%20vim%20pelo%20site%20e%20gostaria%20de%20fazer%20um%20pedido%20!%20"
+		>
+			<img class="whatsapp-sticky" src="./assets/whatsapp.svg" alt="Whatsapp" />
+		</a>
+
+		<footer>
+			<img class="logo-footer" src="./assets/Yatta.svg" alt="Yatta" />
+
+			<div class="instagram">
+				<a href="https://www.instagram.com/yattatemakiesushi/">
+					<img src="./assets/Instagram.svg" alt="Instagram" />
+					<span>@yattatemakiesushi</span>
+				</a>
+			</div>
+
+			<div class="opening-hour">
+				<span>Funcionamento</span>
+				<span>Segunda a segunda das 10h às 22h</span>
+			</div>
+
+			<div class="location">
+				<span>CONTINENTAL SHOPPING</span>
+				<span>Av. Leão Machado, 100</span>
+				<span>Piso Boulevard</span>
+				<span>CEP 05328-020</span>
+				<span>São Paulo - SP</span>
+			</div>
+
+			<span id="copyright">Copyright © 2020 - Todos direitos reservados</span>
+		</footer>
+		<div id="coder">Site desenvolvido por Rafael Ioshi - GitHub @Rafoshi</div>
+		<script src="./scripts/scripts.js"></script>
+	</body>
 </html>
