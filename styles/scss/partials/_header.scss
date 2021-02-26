@@ -168,3 +168,9 @@ header {
 		margin: 0;
 	}
 }
+
+@media (max-width: 380px) {
+	#second-logo {
+		display: none;
+	}
+}

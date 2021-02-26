@@ -203,6 +203,12 @@ header nav ul li a:hover {
   }
 }
 
+@media (max-width: 380px) {
+  #second-logo {
+    display: none;
+  }
+}
+
 h1 {
   font-size: 4.2rem;
   font-weight: 800;

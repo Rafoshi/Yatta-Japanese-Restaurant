@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="theme-color" content="#B41A1A" />
 		<title>Yatta Temakaria</title>
 		<link rel="preconnect" href="https://fonts.gstatic.com" />
 		<link
@@ -11,12 +12,21 @@
 		/>
 		<link rel="stylesheet" href="styles/css/styles.css" />
 		<link rel="icon" href="./assets/icon.svg" sizes="any" type="image/svg+xml" />
+		<meta
+			name="Yatta Temakaria"
+			content="Site para o restaurante Yatta informando o cardápio e direcionando para fazer pedidos no Whastapp"
+		/>
 	</head>
 	<body>
 		<header id="header">
 			<div class="container">
 				<img src="./assets/Yatta.svg" class="logo-mobile" alt="Yatta" />
-				<img src="./assets/yatta-desktop.svg" class="logo-desktop" alt="Yatta" />
+				<img
+					id="second-logo"
+					src="./assets/yatta-desktop.svg"
+					class="logo-desktop"
+					alt="Yatta"
+				/>
 				<div class="menu-section">
 					<div class="menu-toggle">
 						<div class="one"></div>
@@ -57,59 +67,54 @@
 			<h1 id="dishes-title">Pratos</h1>
 
 			<article class="card card-1">
-				<img class="card-photo" src="./assets/card1.jpg" alt="Yakisoba" />
+				<img class="card-photo" src="./assets/boat-subarashii-min.jpg" alt="Yakisoba" />
 				<div class="title">
-					<p class="bigTitle">Yakisoba</p>
-					<p class="unit">2</p>
+					<p class="bigTitle">Boat Subarashii</p>
+					<p class="unit">40</p>
 					<p class="smallText">Unidades</p>
 				</div>
 				<p class="describe">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula
-					magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus.
-					Praesent non lobortis nibh.
+					Sushis (4 uramakis cream cheese, 4 uramakis califórnia, 4 salmon maki), Niguiris
+					(2 salmão, 2 atum, 2 polvo, 2 camarão), Sashimis (4 salmão, 4 atum, 4 polvo, 4
+					peixe prego), 4 Jyos de Salmão
 				</p>
 			</article>
 
 			<article class="card card-2">
-				<img class="card-photo" src="./assets/card1.jpg" alt="Yakisoba" />
+				<img class="card-photo" src="./assets/combinado-boat-min.jpg" alt="Yakisoba" />
 				<div class="title">
-					<p class="bigTitle">Yakisoba</p>
-					<p class="unit">2</p>
+					<p class="bigTitle">Combinado Boat</p>
+					<p class="unit">20</p>
 					<p class="smallText">Unidades</p>
 				</div>
 				<p class="describe">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula
-					magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus.
-					Praesent non lobortis nibh.
+					8 Hot Jyos, 2 Joys de Salmão, 4 Uramaki Salmão Cream 4 salmão Maki e 2 Temakis
+					Livre Escolha (Com Exceção dos temakis de salmão especial, salmão especial com
+					shimeji e inteiro empanado)
 				</p>
 			</article>
 
 			<article class="card card-3">
-				<img class="card-photo" src="./assets/card1.jpg" alt="Yakisoba" />
+				<img class="card-photo" src="./assets/jyo-abacaxi-min.jpg" alt="Yakisoba" />
 				<div class="title">
-					<p class="bigTitle">Yakisoba</p>
-					<p class="unit">2</p>
+					<p class="bigTitle">Jyos de Abacaxi</p>
+					<p class="unit">5/10</p>
 					<p class="smallText">Unidades</p>
 				</div>
 				<p class="describe">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula
-					magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus.
-					Praesent non lobortis nibh.
+					Gunkas de salmão com cobertura de abacaxi em cubos bem pequenos refogados com
+					açúcar e saquê
 				</p>
 			</article>
 
 			<article class="card card-4">
-				<img class="card-photo" src="./assets/card1.jpg" alt="Yakisoba" />
+				<img class="card-photo" src="./assets/salmaoEmpanado.png" alt="Yakisoba" />
 				<div class="title">
-					<p class="bigTitle">Yakisoba</p>
-					<p class="unit">2</p>
-					<p class="smallText">Unidades</p>
+					<p class="bigTitle">Temaki Empanado</p>
+					<p class="unit">1</p>
+					<p class="smallText">Unidade</p>
 				</div>
-				<p class="describe">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula
-					magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus.
-					Praesent non lobortis nibh.
-				</p>
+				<p class="describe">Salmão crú ou grelhado, cream cheese ou maionese e cebolinha</p>
 			</article>
 		</section>
 
@@ -136,8 +141,8 @@
 			</article>
 
 			<article class="deposition deposition-2">
-				<img class="pfp deposition-img-2" src="./assets/thieme.jpg" alt="Foto da Thieme" />
-				<h3 class="deposition-text-2 h3-deposition">Thieme</h3>
+				<img class="pfp deposition-img-2" src="./assets/tiheme.jpg" alt="Foto da Thieme" />
+				<h3 class="deposition-text-2 h3-deposition">Tiheme</h3>
 				<p class="deposition-text deposition-text-2">
 					Cardápio extraordinário, super bem elaborado e ingredientes frescos que
 					surpreendem pela explosão de sabores. Os acompanhamentos dão um show à parte o
@@ -147,13 +152,17 @@
 			</article>
 
 			<article class="deposition deposition-3">
-				<img class="pfp deposition-img-3" src="./assets/pfp.png" alt="Foto da Adriana" />
-				<h3 class="deposition-text-3 h3-deposition">Luna</h3>
+				<img
+					class="pfp deposition-img-3"
+					src="./assets/katiaHelen.png"
+					alt="Foto da Katia"
+				/>
+				<h3 class="deposition-text-3 h3-deposition">Katia</h3>
 				<p class="deposition-text deposition-text-3">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta ligula
-					magna, at consequat arcu dignissim vitae. Vivamus tempor malesuada purus.
-					Praesent non lobortis nibh. Proin iaculis ipsum nisl, vel malesuada est porta
-					non. Proin eget nisl commodo, ultricies risus vel, finibus orci.
+					Yatta sushi referência da culinária japonesa, com todo toque de amor e sutileza
+					no frescor dos pratos oferecidos . Cardápio com diversas variedades para atender
+					todos os públicos que apreciam uma excelente comida japonesa. Sou cliente fiel e
+					super recomendo Yatta sushi.
 				</p>
 			</article>
 		</main>
